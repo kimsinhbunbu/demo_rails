@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">address</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @user %>
+  </tbody>
+</table>
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>

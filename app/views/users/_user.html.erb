@@ -1,0 +1,16 @@
+<tr id="<%= dom_id user %>">
+  <td>
+    <%= user.user_id %>
+  </td>
+  <td>
+    <%= user.user_name %>
+  </td>
+  <td>
+    <%= user.user_address %>
+  </td>
+  <td colspan="3" class="d-flex">
+    <%= link_to "show", user, class: '', style: 'margin-right:10px' %>
+    <%= link_to "edit", edit_user_path(user),class:'',style: 'margin-right:10px' %>
+    <%= button_to "Destroy", user, method: :delete %>
+  </td>
+</tr>
